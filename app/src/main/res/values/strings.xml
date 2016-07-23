@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RungReangChai</string>
+
+    <string name="sticky_rice_new">น.ใหม่</string>
+    <string name="sticky_rice_old">น.เก่า</string>
+    <string name="jasmine_rice">จ.มะลิ</string>
+    <string name="rice_old">ข้าวเก่า</string>
+    <string name="bath">บาท</string>
+    
+    <string name="text_title_main">Calculate</string>
+    <string name="begin_result">0</string>
+    <string name="text_weight">น้ำหนัก</string>
+    <string name="text_amount">จำนวน</string>
+    <string name="text_sack">กระสอบ</string>
+    <string name="text_type_rice">ประเภทข้าว</string>
+    <string name="text_price">ราคา</string>
+    <string name="text_deduct">ถอย 10 %</string>
+    <string name="text_no_deduct">ไม่ถอย</string>
+
+
+    <!--text in button-->
+    <string name="cal">คำนวณ</string>
+    <string name="save">บันทึก</string>
+
+
+</resources>

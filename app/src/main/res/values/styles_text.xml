@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/default_text_title_normal</item>
+    </style>
+
+    <style name="text_begin_result">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">@dimen/default_text_body_result</item>
+    </style>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimaryDark">#388e3c</color>
+    <color name="colorAccent">#F06292</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white_alpha_7">#0FFFFFFF</color>
+    <color name="white_alpha_10">#19FFFFFF</color>
+    <color name="white_alpha_20">#33FFFFFF</color>
+    <color name="white_alpha_30">#4CFFFFFF</color>
+    <color name="white_alpha_40">#66FFFFFF</color>
+    <color name="black_alpha_7">#0F000000</color>
+    <color name="black_alpha_10">#19000000</color>
+    <color name="black_alpha_20">#33000000</color>
+    <color name="black_alpha_30">#4C000000</color>
+    <color name="black_alpha_40">#66000000</color>
+
+
+    <color name="bg_white">#ffffff</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="black">#000000</color>
+
+    <color name="button_transparent_pressed">@color/white_alpha_10</color>
+    <color name="button_disable">@color/gray</color>
+
+
+</resources>

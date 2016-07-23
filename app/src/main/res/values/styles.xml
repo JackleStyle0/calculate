@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="DefaultCardView">
+        <item name="cardCornerRadius">@dimen/default_card_view_corner_radius</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="cardBackgroundColor">@color/bg_white</item>
+    </style>
+    
+    <style name="styleEmpty">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>
