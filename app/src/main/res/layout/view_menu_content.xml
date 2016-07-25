@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_id_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_margin_padding_large"
+        android:paddingLeft="@dimen/default_margin_padding_extra_large"
+        android:paddingRight="@dimen/default_margin_padding_extra_large"
+        android:paddingTop="@dimen/default_margin_padding_large">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/default_margin_padding_small"
+            android:layout_marginRight="@dimen/default_margin_padding_small"
+            android:background="@color/bg_green"
+            android:padding="@dimen/default_margin_padding_normal"
+            android:src="@drawable/ic_date_range" />
+
+        <TextView
+            style="@style/BodyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_menu_calculate" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalDivider"
+        android:layout_width="@dimen/default_margin_padding_normal"
+        android:layout_height="@dimen/default_margin_padding_normal" />
+
+    <LinearLayout
+        android:id="@+id/layout_id_change_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_margin_padding_large"
+        android:paddingLeft="@dimen/default_margin_padding_extra_large"
+        android:paddingRight="@dimen/default_margin_padding_extra_large"
+        android:paddingTop="@dimen/default_margin_padding_large">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/default_margin_padding_small"
+            android:layout_marginRight="@dimen/default_margin_padding_small"
+            android:background="@color/bg_green"
+            android:padding="@dimen/default_margin_padding_normal"
+            android:src="@drawable/ic_exposure" />
+
+        <TextView
+            style="@style/BodyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_menu_cal_rice" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalDivider"
+        android:layout_width="@dimen/default_margin_padding_normal"
+        android:layout_height="@dimen/default_margin_padding_normal" />
+
+    <LinearLayout
+        android:id="@+id/layout_id_change_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_margin_padding_large"
+        android:paddingLeft="@dimen/default_margin_padding_extra_large"
+        android:paddingRight="@dimen/default_margin_padding_extra_large"
+        android:paddingTop="@dimen/default_margin_padding_large">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/default_margin_padding_small"
+            android:layout_marginRight="@dimen/default_margin_padding_small"
+            android:background="@color/bg_green"
+            android:padding="@dimen/default_margin_padding_normal"
+            android:src="@drawable/ic_equalizer" />
+
+        <TextView
+            style="@style/BodyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_menu_static" />
+
+    </LinearLayout>
+
+</LinearLayout>

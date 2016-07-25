@@ -16,11 +16,39 @@
         <item name="android:drawSelectorOnTop">true</item>
         <item name="cardBackgroundColor">@color/bg_white</item>
     </style>
-    
+
     <style name="styleEmpty">
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="HorizontalDivider">
+        <item name="android:background">@color/bg_divider</item>
+        <item name="android:layout_height">@dimen/default_divider</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="style_button_save">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:text">@string/save</item>
+    </style>
+
+    <style name="background_rice">
+        <item name="android:layout_marginBottom">@dimen/default_margin_padding_normal</item>
+        <item name="android:layout_marginLeft">@dimen/default_margin_padding_extra_large</item>
+        <item name="android:layout_marginRight">@dimen/default_margin_padding_extra_large</item>
+        <item name="android:layout_marginTop">@dimen/default_margin_padding_normal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/bg_white</item>
+        <item name="android:paddingBottom">@dimen/default_margin_padding_normal</item>
+        <item name="android:paddingLeft">@dimen/default_margin_padding_extra_large</item>
+        <item name="android:paddingRight">@dimen/default_margin_padding_extra_large</item>
+        <item name="android:paddingTop">@dimen/default_margin_padding_normal</item>
     </style>
 
 </resources>

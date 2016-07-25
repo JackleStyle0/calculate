@@ -6,8 +6,9 @@
     <string name="jasmine_rice">จ.มะลิ</string>
     <string name="rice_old">ข้าวเก่า</string>
     <string name="bath">บาท</string>
-    
+
     <string name="text_title_main">Calculate</string>
+    <string name="text_title_menu">Menu</string>
     <string name="begin_result">0</string>
     <string name="text_weight">น้ำหนัก</string>
     <string name="text_amount">จำนวน</string>
@@ -16,6 +17,10 @@
     <string name="text_price">ราคา</string>
     <string name="text_deduct">ถอย 10 %</string>
     <string name="text_no_deduct">ไม่ถอย</string>
+
+    <string name="text_menu_calculate">คำนวณค่าข้าว</string>
+    <string name="text_menu_cal_rice">เปลี่ยนราคาข้าว</string>
+    <string name="text_menu_static">สถิติ</string>
 
 
     <!--text in button-->
