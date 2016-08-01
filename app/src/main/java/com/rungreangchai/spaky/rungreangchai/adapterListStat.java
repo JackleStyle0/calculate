@@ -33,7 +33,11 @@ public class AdapterListStat extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return date.length;
+        if (date.length > 0)
+            return date.length;
+        else {
+            return 0;
+        }
     }
 
     @Override
@@ -70,7 +74,7 @@ public class AdapterListStat extends BaseAdapter {
         holder.txtWeigth.setText(weight[position]);
         holder.txtNameRice.setText(nameRice[position]);
         holder.txtExpend.setText(expend[position]);
-        holder.txtAmount.setText(amount[position]+" กระสอบ");
+        holder.txtAmount.setText(amount[position] + " กระสอบ");
 
         return convertView;
     }

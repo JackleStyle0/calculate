@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText edWeight, edAmount, edPrice;
     RadioButton raDeduct, raNoDeduct;
     Button btnSave, btnCal;
+    ImageButton navButton;
     Cursor mCursor;
     Spinner spiType;
     String strCol1, strCol2;
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCal.setOnClickListener(this);
         raDeduct.setOnClickListener(this);
         raNoDeduct.setOnClickListener(this);
+        navButton.setOnClickListener(this);
     }
 
 
@@ -109,6 +112,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Button
         btnSave = (Button) findViewById(R.id.button_save);
         btnCal = (Button) findViewById(R.id.button_cal);
+
+        navButton = (ImageButton) findViewById(R.id.nav_button);
 
         //spiner
         spiType = (Spinner) findViewById(R.id.spiner_type_rice);
@@ -162,6 +167,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 raNoDeduct.setChecked(false);
                 chRadioButton = true;
                 break;
+            case R.id.nav_button:
+                Intent intent = new Intent(MainActivity.this, activity_menu.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
             default:
                 break;
         }

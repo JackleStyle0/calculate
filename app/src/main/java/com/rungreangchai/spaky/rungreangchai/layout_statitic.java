@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -23,6 +24,7 @@ public class layout_statitic extends AppCompatActivity implements AdapterView.On
     Spinner spYear, spMonth, spDay;
     ListView lvStat;
     List<String> lstYear, lstMonth, lstDay;
+    TextView txtEmpty;
 
     String date[], dateInStat[], weight[], nameRice[], expend[], amount[];
     String searchDate = "";
@@ -78,10 +80,6 @@ public class layout_statitic extends AppCompatActivity implements AdapterView.On
         ArrayAdapter<String> adapter_day = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lstDay);
         spDay.setAdapter(adapter_day);
 
-//        AdapterListStat adapterListStat = new AdapterListStat(this, dateInStat, weight, nameRice, expend, amount);
-//        lvStat.setAdapter(adapterListStat);
-
-
         spYear.setOnItemSelectedListener(this);
         spMonth.setOnItemSelectedListener(this);
         spDay.setOnItemSelectedListener(this);
@@ -97,6 +95,7 @@ public class layout_statitic extends AppCompatActivity implements AdapterView.On
         spDay = (Spinner) findViewById(R.id.spinner_day);
 
         lvStat = (ListView) findViewById(R.id.list_statice);
+        txtEmpty = (TextView) findViewById(R.id.empty_listview);
     }
 
 
@@ -107,21 +106,50 @@ public class layout_statitic extends AppCompatActivity implements AdapterView.On
         mySQLite.closeSQLiteDatabase();
     }
 
+
+    public void selFormStat(String strDate) {
+//        Toast.makeText(getApplicationContext(), strDate, Toast.LENGTH_SHORT).show();
+        mCursor = mySQLite.selByYear(strDate);
+        mCursor.moveToFirst();
+
+        dateInStat = new String[mCursor.getCount()];
+        weight = new String[mCursor.getCount()];
+        nameRice = new String[mCursor.getCount()];
+        amount = new String[mCursor.getCount()];
+        expend = new String[mCursor.getCount()];
+
+        int i = 0;
+        while (mCursor.isAfterLast()) {
+            dateInStat[i] = mCursor.getString(mCursor.getColumnIndex(MySQLite.col_date));
+            weight[i] = mCursor.getString(mCursor.getColumnIndex(MySQLite.col_weight));
+            nameRice[i] = mCursor.getString(mCursor.getColumnIndex(MySQLite.col_type_rice));
+            amount[i] = mCursor.getString(mCursor.getColumnIndex(MySQLite.col_amount));
+            expend[i] = mCursor.getString(mCursor.getColumnIndex(MySQLite.col_result));
+
+            i++;
+            mCursor.moveToNext();
+        }
+
+        AdapterListStat adapterListStat = new AdapterListStat(this, dateInStat, weight, nameRice, expend, amount);
+        lvStat.setAdapter(adapterListStat);
+
+        mCursor.close();
+
+    }
+
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {
             case R.id.spinner_year:
-                searchDate = parent.getItemAtPosition(position) + "-";
-//                Toast.makeText(getApplicationContext(), "" + parent.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
+                searchDate += parent.getItemAtPosition(position) + "-";
                 break;
             case R.id.spinner_month:
                 searchDate += parent.getItemAtPosition(position) + "-";
-                ;
-//                Toast.makeText(getApplicationContext(), "" + parent.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.spinner_day:
                 searchDate += parent.getItemAtPosition(position);
-                Snackbar.make(parent, searchDate, Snackbar.LENGTH_SHORT).show();
+                selFormStat(searchDate);
+                searchDate = "";
                 break;
         }
     }

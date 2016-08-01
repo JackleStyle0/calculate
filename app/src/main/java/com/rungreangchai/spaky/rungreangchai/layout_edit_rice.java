@@ -3,6 +3,7 @@ package com.rungreangchai.spaky.rungreangchai;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.support.design.widget.FloatingActionButton;
@@ -17,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -32,6 +34,7 @@ public class layout_edit_rice extends AppCompatActivity {
     String strPrice;
     String tempName;
     FloatingActionButton fap;
+    ImageButton navButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,12 +95,21 @@ public class layout_edit_rice extends AppCompatActivity {
 
         );
 
+        navButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(layout_edit_rice.this, activity_menu.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+            }
+        });
 
     }
 
     public void bindWidget() {
         lstItem = (ListView) findViewById(R.id.listItem);
         fap = (FloatingActionButton) findViewById(R.id.fap);
+        navButton = (ImageButton) findViewById(R.id.nav_button);
     }
 
     @Override

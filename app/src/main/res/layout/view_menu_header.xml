@@ -23,6 +23,7 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/back_button"
                 android:layout_width="@dimen/default_toolbar_button_size"
                 android:layout_height="@dimen/default_toolbar_button_size"
                 android:background="@drawable/selector_button_transparent"

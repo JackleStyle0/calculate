@@ -21,4 +21,10 @@
         android:choiceMode="singleChoice"
         android:minHeight="1dp"></ListView>
 
+    <TextView
+        android:id="@+id/empty_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
 </LinearLayout>

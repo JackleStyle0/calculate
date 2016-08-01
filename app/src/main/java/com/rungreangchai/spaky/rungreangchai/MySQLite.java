@@ -35,7 +35,6 @@ public class MySQLite {
     public final static String col_amount = "amount";
 
     private String allColRice[] = {col_type, col_price};
-    private String Coldate[] = {col_date};
     private String allColStat[] = {col_date, col_weight, col_type_rice, col_result, col_amount};
 //    public final static String
 
@@ -88,22 +87,13 @@ public class MySQLite {
     }
 
     public Cursor selectStat() {
-        Cursor cursor = sqLiteDatabase.query(table_stat, Coldate, null, null, null, null, null);
-        return cursor;
-    }
-
-    public Cursor selectAllInStat(String date) {
-        Cursor cursor = sqLiteDatabase.query(table_name, allColStat, col_date + "=?", new String[]{date}, null, null, null, null);
+        Cursor cursor = sqLiteDatabase.query(table_stat, allColStat, null, null, null, null, null);
         return cursor;
     }
 
     public Cursor selByYear(String selValue) {
-        Cursor cursor = sqLiteDatabase.query(table_stat, new String[]{col_date}, col_date + " LIKE ?", new String[]{"%" + selValue + "%"}, null, null, null);
+        Cursor cursor = sqLiteDatabase.query(table_stat, allColStat, col_date + " =?", new String[]{selValue}, null, null, null);
         return cursor;
-    }
-
-    public void selBymount() {
-
     }
 
 
