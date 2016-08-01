@@ -8,14 +8,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/default_margin_padding_normal"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="@dimen/default_margin_padding_normal"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
@@ -24,6 +23,7 @@
                 android:layout_weight="1">
 
                 <TextView
+                    android:id="@+id/text_name_col1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/rice_old"
@@ -31,51 +31,6 @@
 
                 <View style="@style/styleEmpty"></View>
 
-                <TextView
-                    android:id="@+id/price_rice_ole"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorAccent"
-                    android:text="8"
-                    android:textSize="@dimen/default_text_header_normal" />
-
-                <View style="@style/styleEmpty"></View>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bath"
-                    android:textSize="@dimen/default_text_header_normal" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sticky_rice_new"
-                    android:textSize="@dimen/default_text_header_normal" />
-
-                <View style="@style/styleEmpty"></View>
-
-                <TextView
-                    android:id="@+id/sticky_rice_new"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorAccent"
-                    android:text="8"
-                    android:textSize="@dimen/default_text_header_normal" />
-
-                <View style="@style/styleEmpty"></View>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bath"
-                    android:textSize="@dimen/default_text_header_normal" />
             </LinearLayout>
 
         </LinearLayout>
@@ -83,8 +38,8 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="@dimen/default_margin_padding_normal"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
@@ -93,6 +48,7 @@
                 android:layout_weight="1">
 
                 <TextView
+                    android:id="@+id/text_name_col2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/jasmine_rice"
@@ -100,53 +56,7 @@
 
                 <View style="@style/styleEmpty"></View>
 
-                <TextView
-                    android:id="@+id/jasmine_rice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorAccent"
-                    android:text="8"
-                    android:textSize="@dimen/default_text_header_normal" />
-
-                <View style="@style/styleEmpty"></View>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bath"
-                    android:textSize="@dimen/default_text_header_normal" />
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sticky_rice_old"
-                    android:textSize="@dimen/default_text_header_normal" />
-
-                <View style="@style/styleEmpty"></View>
-
-                <TextView
-                    android:id="@+id/sticky_rice_old"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorAccent"
-                    android:text="8"
-                    android:textSize="@dimen/default_text_header_normal" />
-
-                <View style="@style/styleEmpty"></View>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bath"
-                    android:textSize="@dimen/default_text_header_normal" />
-            </LinearLayout>
-
         </LinearLayout>
 
 

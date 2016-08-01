@@ -6,7 +6,6 @@
     android:orientation="vertical">
 
     <include layout="@layout/view_toolbar"></include>
-    <include layout="@layout/header_layout"></include>
     <include layout="@layout/calculate_layout"></include>
 
 

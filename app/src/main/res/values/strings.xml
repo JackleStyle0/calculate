@@ -6,7 +6,9 @@
     <string name="jasmine_rice">จ.มะลิ</string>
     <string name="rice_old">ข้าวเก่า</string>
     <string name="bath">บาท</string>
+    <string name="rice">ข้าว</string>
 
+    <string name="text_increment">เพิ่มข้าว</string>
     <string name="text_title_main">Calculate</string>
     <string name="text_title_menu">Menu</string>
     <string name="begin_result">0</string>
@@ -22,10 +24,15 @@
     <string name="text_menu_cal_rice">เปลี่ยนราคาข้าว</string>
     <string name="text_menu_static">สถิติ</string>
 
+    <string name="text_name_rice">ประเภทข้าว</string>
+
 
     <!--text in button-->
     <string name="cal">คำนวณ</string>
     <string name="save">บันทึก</string>
+    <string name="edit">แก้ไข</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 
 </resources>

@@ -3,6 +3,7 @@
     style="@style/DefaultCardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/bg_white"
     android:gravity="center_vertical|center_horizontal"
     android:orientation="horizontal"
     android:paddingBottom="@dimen/default_margin_padding_extra_large"
@@ -14,17 +15,18 @@
     <Spinner
         android:id="@+id/spinner_year"
         android:layout_width="0dp"
+
         android:layout_height="wrap_content"
         android:layout_weight="1"></Spinner>
 
     <Spinner
-        android:id="@+id/spinner_mount"
+        android:id="@+id/spinner_month"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"></Spinner>
 
     <Spinner
-        android:id="@+id/spinner_date"
+        android:id="@+id/spinner_day"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"></Spinner>

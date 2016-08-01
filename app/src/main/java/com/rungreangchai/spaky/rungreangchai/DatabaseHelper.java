@@ -19,11 +19,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final String SQL_CREATE_TABLE_STAT = "CREATE TABLE " + MySQLite.table_stat + " ("
             + "_id INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + MySQLite.col_date + " DATE,"
+            + MySQLite.col_date + " TEXT,"
             + MySQLite.col_weight + " TEXT,"
-            + MySQLite.col_type + " TEXT,"
-            + MySQLite.col_price + " TEXT,"
-            + MySQLite.col_amount + " TEXT)";
+            + MySQLite.col_type_rice + " TEXT,"
+            + MySQLite.col_result + " TEXT,"
+            + MySQLite.col_amount + " TEXT" + ")";
 
     public DatabaseHelper(Context context) {
         super(context, databaseName, null, databaseVersion);

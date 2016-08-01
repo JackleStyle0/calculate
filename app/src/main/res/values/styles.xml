@@ -29,13 +29,29 @@
         <item name="android:layout_width">match_parent</item>
     </style>
 
-    <style name="style_button_save">
+    <style name="style_button_edit_price">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">?android:attr/selectableItemBackground</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:layout_gravity">right</item>
+        <item name="android:text">@string/edit</item>
+    </style>
+
+    <style name="style_button_save">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:text">@string/save</item>
+    </style>
+
+    <style name="style_dialog_cancel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:text">@string/cancel</item>
     </style>
 
     <style name="background_rice">
@@ -50,5 +66,21 @@
         <item name="android:paddingRight">@dimen/default_margin_padding_extra_large</item>
         <item name="android:paddingTop">@dimen/default_margin_padding_normal</item>
     </style>
+
+    <style name="background_dialog_edit">
+        <item name="android:layout_marginBottom">@dimen/default_margin_padding_normal</item>
+        <item name="android:layout_marginLeft">@dimen/default_margin_padding_extra_large</item>
+        <item name="android:layout_marginRight">@dimen/default_margin_padding_extra_large</item>
+        <item name="android:layout_marginTop">@dimen/default_margin_padding_normal</item>
+        <item name="android:background">@color/bg_white</item>
+        <item name="android:paddingBottom">@dimen/default_margin_padding_normal</item>
+        <item name="android:paddingLeft">@dimen/default_margin_padding_extra_large</item>
+        <item name="android:paddingRight">@dimen/default_margin_padding_extra_large</item>
+        <item name="android:paddingTop">@dimen/default_margin_padding_normal</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

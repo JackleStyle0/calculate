@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/background_rice"
+    style="@style/background_dialog_edit"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/type_rice"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sticky_rice_new"
-        android:textColor="@color/bg_green"
-        android:textSize="@dimen/default_text_title_normal" />
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_name_rice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ชื้อข้าว" />
+    </android.support.design.widget.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,18 +29,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="@string/text_price"
-            android:textColor="@color/black"
             android:textSize="@dimen/default_text_body_normal" />
 
 
-        <TextView
-            android:id="@+id/txt_price_rice"
+        <EditText
+            android:id="@+id/ed_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:text="@string/text_weight"
-            android:textColor="@color/bg_green"
+            android:layout_weight="1.5"
+            android:hint="@string/text_price"
+            android:inputType="number"
             android:textSize="@dimen/default_text_body_normal" />
 
         <TextView
@@ -45,7 +46,27 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="@string/bath"
-            android:textColor="@color/black"
             android:textSize="@dimen/default_text_body_normal" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_area_heigth"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/style_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/style_button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 </LinearLayout>

@@ -30,7 +30,19 @@
     <dimen name="default_text_body_large">18sp</dimen>
     <dimen name="default_text_body_extra_large">20sp</dimen>
 
-    <dimen name="default_text_body_result">100sp</dimen>
+    <dimen name="default_text_body_result">120sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--dialog-->
+    <dimen name="font_size_title">24sp</dimen>
+    <dimen name="padding_around_content">24dp</dimen>
+    <dimen name="padding_betweed_title_and_content">20dp</dimen>
+    <dimen name="padding_around_buttons">8dp</dimen>
+    <dimen name="button_heigth">36dp</dimen>
+    <dimen name="action_area_heigth">52dp</dimen>
+
+
 
 
 </resources>
